@@ -1,0 +1,241 @@
+:root {
+    --color-1: #2E2F42;
+    --color-2: #FFFFFF;
+    --color-3: #F4F4FD;
+    --color-4: #434455;
+    --color-5: #E7E9FC;
+    --color-6: #4D5AE5;
+    --color-hover-button-studio: #404BBF /*Only color*/;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Header and Footer*/
+.main-link {
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.first-part {
+    color: var(--color-6);
+}
+
+.second-part-1 {
+    color: var(--color-1);
+}
+
+.second-part-2 {
+    color: var(--color-3);
+}
+
+/*Header*/
+.top-part {
+    background-color: var(--color-2);
+}
+
+/*For every list on the web*/
+.top-list,
+.list-purposes,
+.list-employments,
+.list-team {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.nav-a {
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: 600;
+}
+
+.nav-a:hover,
+.nav-a:focus {
+    color: var(--color-6);
+}
+
+.contacts-a {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
+.contacts-a:hover,
+.contacts-a:focus {
+    color: var(--color-6);
+}
+
+/*Effective solutions for your business*/
+.greeting {
+    background-color: var(--color-1);
+}
+
+/*Button - Order Service*/
+.appeal-button {
+    padding: 16px 32px;
+    background-color: var(--color-6);
+    color: var(--color-2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.appeal-button:focus,
+.appeal-button:hover {
+    background: var(--color-hover-button-studio);
+}
+
+/*Text for Effective....*/
+.main-starting {
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--color-2);
+}
+
+/*Purposes*/
+.purposes {
+    background-color: var(--color-2);
+}
+
+/*Purposes > h2*/
+.purposes-title {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-1);
+}
+
+/*Purposes > p*/
+.purposes-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-4);
+}
+
+/*What Are We Doing?*/
+.employments {
+    background-color: var(--color-2);
+}
+
+.title-photos {
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-1);
+}
+
+/*Our Team*/
+
+.person-item {
+    background-color: var(--color-2);
+}
+
+.our-team {
+    background-color: var(--color-3);
+}
+
+.title-photos-2 {
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-1);
+}
+
+/*Names of four persons*/
+.names {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-1);
+}
+
+/*Function of every participants*/
+.position {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-4);
+}
+
+/*Footer*/
+.floor {
+    background-color: var(--color-1);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-5);
+}
+
+/*Styles for Portfolio*/
+
+.button-item {
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--color-6);
+    background-color: var(--color-3);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.button-items:hover,
+.button-items:focus {
+    color: var(--color-2);
+    background-color: var(--color-6);
+    border: 1px solid var(--color-6);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.list-portfolio-nav,
+.list-portfolio-photos {
+    list-style-type: none;
+}
+
+.portfolio-photos {
+    text-decoration: none;
+}
+
+.li-portfolio {
+    background: var(--color-2);
+    border: 0.5px solid var(--color-3);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.li-portfolio:hover,
+.li-portfolio:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-1);
+}
+
+.portfolio-p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-4);
+}
