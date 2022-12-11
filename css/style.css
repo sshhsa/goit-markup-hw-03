@@ -12,6 +12,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/*Addition styles for */
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 1158px;
+}
+
 /*Styles for index*/
 
 /*Header*/
@@ -32,7 +42,7 @@ body {
 
 .list-nav {
     display: flex;
-    margin-right: 331px;
+    margin-right: 300px;
 }
 
 .list-nav :not(:last-child) {
@@ -43,9 +53,15 @@ body {
     margin: 0;
 }
 
+.nav-a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .contacts-ul {
     display: flex;
-    margin: 0px 156px 0px 0px;
+    align-items: center;
+    margin: 0;
 }
 
 .contacts-ul .contacts-li + .contacts-li {
@@ -56,10 +72,15 @@ body {
     margin: 0;
 }
 
+.contacts-a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 /*Header*/
 
 .main-link-header {
-    padding: 24px 148px 24px 156px;
+    padding: 0;
 
     width: 115px;
     font-size: 18px;
@@ -97,7 +118,8 @@ body {
 }
 
 .nav-a:hover,
-.nav-a:focus {
+.nav-a:focus,
+.nav-a:active {
     color: var(--color-6);
 }
 
@@ -113,7 +135,6 @@ body {
 
 /*Effective solutions for your business*/
 .greeting {
-    margin-bottom: 120px;
     text-align: center;
 
     max-height: 603px;
@@ -124,13 +145,14 @@ body {
 /*Text for Effective....*/
 .main-starting {
     margin: 0;
-    margin-bottom: 48px;
     padding: 0;
-    padding: 192px 447px 0px 447px;
+    padding-top: 192px;
+    padding-bottom: 48px;
 
     font-size: 56px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+
     color: var(--color-2);
 }
 
@@ -143,6 +165,7 @@ body {
     border: none;
     font-family: inherit;
     cursor: pointer;
+
     color: var(--color-2);
     background-color: var(--color-6);
 }
@@ -158,7 +181,8 @@ body {
 
 /*Purposes*/
 .purposes {
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 
     background-color: var(--color-2);
 }
@@ -167,10 +191,11 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 0;
 }
 
 .list-li-purposes {
-    width: 264px;
+    width: calc(100% - 72px / 4);
 }
 
 .list-purposes .list-li-purposes + .list-li-purposes {
@@ -184,6 +209,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+
     color: var(--color-1);
 }
 
@@ -194,6 +220,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--color-4);
 }
 
@@ -206,13 +233,14 @@ body {
 
 .title-photos {
     margin: 0;
-    margin-bottom: 72px;
+    padding-bottom: 72px;
     text-align: center;
 
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
     color: var(--color-1);
 }
 
@@ -220,6 +248,7 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    padding: 0;
 }
 
 .list-employments :not(:first-child) {
@@ -236,6 +265,7 @@ body {
 
 .title-photos-2 {
     margin: 0;
+    margin-bottom: 72px;
     padding-top: 120px;
     text-align: center;
 
@@ -243,6 +273,7 @@ body {
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
     color: var(--color-1);
 }
 
@@ -250,11 +281,21 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding-top: 72px;
+    padding: 0;
 }
 
 .list-team :not(:last-child) {
     margin-right: 24px;
+}
+
+.person-item-div {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    letter-spacing: 0.02em;
 }
 
 .person-item {
@@ -264,28 +305,23 @@ body {
 
 /*Names of four persons*/
 .names {
-    text-align: center;
     margin: 0;
-    margin-right: 0 !important;
-    padding-top: 32px;
+    padding: 0;
 
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
+
     color: var(--color-1);
 }
 
 /*Function of every participants*/
 .position {
-    text-align: center;
     margin: 0;
     padding-top: 8px;
-    padding-bottom: 32px;
 
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;
-
+    
     color: var(--color-4);
 }
 
@@ -294,7 +330,6 @@ body {
 /*Label - WEBSTUDIO*/
 
 .main-link-footer {
-    
     width: 115px;
     font-size: 18px;
     line-height: 1.3;
@@ -314,14 +349,15 @@ body {
 
 /*Text of footer*/
 
-.floor {
+.wrapper-footer {
+    padding: 100px 0;
     background-color: var(--color-1);
 }
 
-.floor-area {
-    padding: 100px 1130px 100px 168px;
-
-    min-width: 264px;
+.footer-div {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .footer-text {
@@ -329,11 +365,23 @@ body {
     padding: 0;
     padding-top: 16px;
 
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
     color: var(--color-5);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -353,6 +401,15 @@ body {
 
 /*list-portfolio-nav and Buttons*/
 
+.portfolio-div {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 96px;
+    padding-bottom: 120px;
+
+    width: 1340px;
+}
+
 .list-portfolio-nav,
 .list-portfolio-photos {
     list-style-type: none;
@@ -361,10 +418,9 @@ body {
 .list-portfolio-nav {
     display: flex;
     justify-content: center;
-    margin-top: 96px;
-    margin-bottom: 72px;
-
-    max-height: 48px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 72px;
 }
 
 .list-portfolio-nav :not(:last-child) {
@@ -374,48 +430,61 @@ body {
 .list-portfolio-nav .button-items {
     padding: 12px 24px;
     text-align: center;
+
     letter-spacing: 0.04em;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     border-radius: 4px;
-    border: none;
+    border: 1px solid var(--color-5);
     cursor: pointer;
+
     color: var(--color-6);
     background-color: var(--color-3);
 }
 
-.list-portfolio-nav .button-items:hover {
+.list-portfolio-nav .button-items:hover,
+.list-portfolio-nav .button-items:focus,
+.list-portfolio-nav .button-items:active {
     border: 1px solid var(--color-6);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
     color: var(--color-2);
     background-color: var(--color-6);
 }
 
+/* Areas for portfolio */
+
 .list-portfolio-photos {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin: 0;
-    padding-bottom: 120px;
+    margin: 0 auto;
 }
 
-.list-portfolio-photos :not(:last-child) {
-    margin-right: 24px;
-}
+
 
 /*Portfolio*/
 
-.portfolio-photos {
+.portfolio-photos-a {
+    display: block;
+
     text-decoration: none;
+    max-width: 100%;
 }
 
 .li-portfolio {
     margin: 0;
+    padding: 0;
+    margin-right: 24px;
+    margin-bottom: 48px;
     
     border: 0.5px solid var(--color-3);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     background: var(--color-2);
+}
+
+.li-portfolio:nth-last-child(-n + 3) {
+    margin-bottom: 0;
 }
 
 .li-portfolio:hover,
@@ -423,46 +492,13 @@ body {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.li-portfolio:nth-child(-n + 6) {
-    margin-bottom: 48px;
-}
+/*li-portfolio*/
 
-/*li-portfolio  h2*/
-
-.li-portfolio-1 {
-    padding-right: 53px;
-}
-
-.li-portfolio-2 {
-    padding-right: 171px; 
-}
-
-.li-portfolio-3 {
-    padding-right: 208px; 
-}
-
-.li-portfolio-4 {
-    padding-right: 230px; 
-}
-
-.li-portfolio-5 {
-    padding-right: 162px;
-}
-
-.li-portfolio-6 {
-    padding-right: 202px;
-}
-
-.li-portfolio-7 {
-    padding-right: 95px;
-}
-
-.li-portfolio-8 {
-    padding-right: 220px;
-}
-
-.li-portfolio-9 {
-    padding-right: 224px;
+.li-portfolio-text {
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
 }
 
 .li-portfolio-1,
@@ -475,9 +511,8 @@ body {
 .li-portfolio-8,
 .li-portfolio-9 {
     margin: 0;
-    padding-top: 32px;
+    padding: 0;
     padding-bottom: 8px;
-    padding-left: 16px;
 
     font-weight: 600;
     font-size: 20px;
@@ -486,34 +521,11 @@ body {
     color: var(--color-1);
 }
 
-/*li-portfolio > portfolio-p > portfolio-p-1,2,3,4,5,6,7,8,9-*/
-
-.portfolio-p-1,
-.portfolio-p-3 {
-    padding-right: 314px;
-}
-
-.portfolio-p-2,
-.portfolio-p-4,
-.portfolio-p-6 {
-    padding-right: 269px;
-}
-
-.portfolio-p-5,
-.portfolio-p-7 {
-    padding-right: 293px;
-}
-
-.portfolio-p-8,
-.portfolio-p-9 {
-    padding-right: 279px;
-}
+/*li-portfolio > portfolio-p */
 
 .portfolio-p {
     margin: 0;
-    padding-top: 0px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 0;
 
     font-size: 16px;
     line-height: 1.5;
