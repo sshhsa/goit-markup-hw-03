@@ -1,3 +1,7 @@
+
+
+/*Addition styles for css*/
+
 :root {
     --color-1: #2E2F42;
     --color-2: #FFFFFF;
@@ -12,14 +16,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*Addition styles for */
-
 .container {
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 156px;
+    padding-right: 156px;
 }
 
 /*Styles for index*/
@@ -34,6 +35,7 @@ body {
 .header-nav {
     display: flex;
     align-items: center;
+    margin-right: 331px;
 }
 
 .top-part {
@@ -42,7 +44,9 @@ body {
 
 .list-nav {
     display: flex;
-    margin-right: 300px;
+    margin: 0;
+    padding: 0;
+    margin-left: 77px;
 }
 
 .list-nav :not(:last-child) {
@@ -54,14 +58,45 @@ body {
 }
 
 .nav-a {
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.nav-a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--color-1);
+}
+
+.nav-a:hover,
+.nav-a:focus {
+    color: var(--color-6);
+}
+
+.nav-a:active {
+    color: var(--color-6);
+}
+
+.contacts-a {
+    text-decoration: none;
+    color: var(--color-4);
+}
+
+.contacts-a:hover,
+.contacts-a:focus {
+    color: var(--color-6);
+}
+
+.contacts-a:active {
+    color: var(--color-6);
 }
 
 .contacts-ul {
     display: flex;
     align-items: center;
     margin: 0;
+    padding: 0;
 }
 
 .contacts-ul .contacts-li + .contacts-li {
@@ -73,6 +108,7 @@ body {
 }
 
 .contacts-a {
+    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -111,33 +147,10 @@ body {
     letter-spacing: 0.02em;
 }
 
-.nav-a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--color-1);
-}
-
-.nav-a:hover,
-.nav-a:focus,
-.nav-a:active {
-    color: var(--color-6);
-}
-
-.contacts-a {
-    text-decoration: none;
-    color: var(--color-4);
-}
-
-.contacts-a:hover,
-.contacts-a:focus {
-    color: var(--color-6);
-}
-
 /*Effective solutions for your business*/
 .greeting {
+    padding: 192px 0;
     text-align: center;
-
-    max-height: 603px;
 
     background-color: var(--color-1);
 }
@@ -146,8 +159,7 @@ body {
 .main-starting {
     margin: 0;
     padding: 0;
-    padding-top: 192px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 
     font-size: 56px;
     line-height: 1.1;
@@ -173,10 +185,6 @@ body {
 .button-items:focus,
 .button-items:hover {
     background: var(--color-hover-button-studio);
-}
-
-.container-button {
-    padding-bottom: 192px;
 }
 
 /*Purposes*/
@@ -226,14 +234,14 @@ body {
 
 /*What Are We Doing?*/
 .employments {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 
     background-color: var(--color-2);
 }
 
 .title-photos {
     margin: 0;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     text-align: center;
 
     font-size: 36px;
@@ -258,6 +266,9 @@ body {
 /*Our Team*/
 
 .our-team {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
     padding-bottom: 120px;
 
     background-color: var(--color-3);
@@ -266,7 +277,6 @@ body {
 .title-photos-2 {
     margin: 0;
     margin-bottom: 72px;
-    padding-top: 120px;
     text-align: center;
 
     font-size: 36px;
@@ -289,18 +299,23 @@ body {
 }
 
 .person-item-div {
-    text-align: center;
     margin: 0;
     padding: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
+    text-align: center;
 
     letter-spacing: 0.02em;
 }
 
 .person-item {
-    width: 264px;
+    width: calc(100% - 72px / 4);
+
     background-color: var(--color-2);
+}
+
+.person-item-img {
+    display: block;
+    width: 100%;
 }
 
 /*Names of four persons*/
@@ -317,7 +332,8 @@ body {
 /*Function of every participants*/
 .position {
     margin: 0;
-    padding-top: 8px;
+    padding: 0;
+    margin-top: 8px;
 
     font-size: 16px;
     line-height: 1.5;
@@ -351,6 +367,7 @@ body {
 
 .wrapper-footer {
     padding: 100px 0;
+
     background-color: var(--color-1);
 }
 
@@ -401,7 +418,8 @@ body {
 
 /*list-portfolio-nav and Buttons*/
 
-.portfolio-div {
+.portfolio-main-area {
+    margin: 0;
     margin-left: auto;
     margin-right: auto;
     padding-top: 96px;
@@ -420,7 +438,7 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .list-portfolio-nav :not(:last-child) {
@@ -444,7 +462,14 @@ body {
 }
 
 .list-portfolio-nav .button-items:hover,
-.list-portfolio-nav .button-items:focus,
+.list-portfolio-nav .button-items:focus {
+    border: 1px solid var(--color-6);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    color: var(--color-2);
+    background-color: var(--color-6);
+}
+
 .list-portfolio-nav .button-items:active {
     border: 1px solid var(--color-6);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -455,10 +480,19 @@ body {
 
 /* Areas for portfolio */
 
+.container-portfolio-grid {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .list-portfolio-photos {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
+    padding-left: 0;
+    margin-right: 0;
+    margin-right: -24px;
+    margin-bottom: -48px;
 }
 
 
@@ -499,6 +533,7 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 .li-portfolio-1,
@@ -512,7 +547,7 @@ body {
 .li-portfolio-9 {
     margin: 0;
     padding: 0;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
     font-weight: 600;
     font-size: 20px;
