@@ -12,6 +12,14 @@
     --color-hover-button-studio: #404BBF /*Only color*/;
 }
 
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -19,8 +27,10 @@ body {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15x;
+
+    width: 1158px;
 }
 
 /*Styles for index*/
@@ -30,12 +40,12 @@ body {
 .container-header {
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
-    margin-right: 331px;
 }
 
 .top-part {
@@ -118,7 +128,6 @@ body {
 .main-link-header {
     padding: 0;
 
-    width: 115px;
     font-size: 18px;
     line-height: 1.3;
     font-weight: 800;
@@ -194,6 +203,16 @@ body {
 
     background-color: var(--color-2);
 }
+
+/*.purposes-main-label {
+    margin-bottom: 72px;
+    text-align: center;
+
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-1);
+}*/
 
 .list-purposes {
     display: flex;
@@ -294,10 +313,6 @@ body {
     padding: 0;
 }
 
-.list-team :not(:last-child) {
-    margin-right: 24px;
-}
-
 .person-item-div {
     margin: 0;
     padding: 0;
@@ -308,6 +323,8 @@ body {
 }
 
 .person-item {
+    margin-right: 24px;
+
     width: calc(100% - 72px / 4);
 
     background-color: var(--color-2);
@@ -424,8 +441,10 @@ body {
     margin-right: auto;
     padding-top: 96px;
     padding-bottom: 120px;
+}
 
-    width: 1340px;
+.portfolio-button {
+    margin-bottom: 72px;
 }
 
 .list-portfolio-nav,
@@ -438,7 +457,6 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    margin-bottom: 72px;
 }
 
 .list-portfolio-nav :not(:last-child) {
