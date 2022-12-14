@@ -15,7 +15,6 @@
 *,
 ::after,
 ::before {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -25,10 +24,12 @@ body {
 }
 
 .container {
+    margin: 0;
+    padding: 0;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15x;
+    padding-right: 15px;
 
     width: 1158px;
 }
@@ -54,8 +55,6 @@ body {
 
 .list-nav {
     display: flex;
-    margin: 0;
-    padding: 0;
     margin-left: 77px;
 }
 
@@ -63,28 +62,32 @@ body {
     margin-right: 40px;
 }
 
-.list-li-nav {
-    margin: 0;
-}
-
-.nav-a {
+.nav-a-1,
+.nav-a-2,
+.nav-a-3 {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-}
-
-.nav-a {
     text-decoration: none;
     font-weight: 600;
     color: var(--color-1);
 }
 
-.nav-a:hover,
-.nav-a:focus {
+.nav-a-1:focus,
+.nav-a-2:focus,
+.nav-a-3:focus {
     color: var(--color-6);
 }
 
-.nav-a:active {
+.nav-a-1:hover,
+.nav-a-2:hover,
+.nav-a-3:hover {
+    color: var(--color-6);
+}
+
+.nav-a-1:active,
+.nav-a-2:active,
+.nav-a-3:active {
     color: var(--color-6);
 }
 
@@ -105,16 +108,10 @@ body {
 .contacts-ul {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .contacts-ul .contacts-li + .contacts-li {
     margin-left: 40px;
-}
-
-.contacts-li {
-    margin: 0;
 }
 
 .contacts-a {
@@ -166,8 +163,6 @@ body {
 
 /*Text for Effective....*/
 .main-starting {
-    margin: 0;
-    padding: 0;
     margin-bottom: 48px;
 
     font-size: 56px;
@@ -204,7 +199,20 @@ body {
     background-color: var(--color-2);
 }
 
-/*.purposes-main-label {
+.hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: 50%;
+}
+
+.purposes-main-label {
     margin-bottom: 72px;
     text-align: center;
 
@@ -212,13 +220,11 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-1);
-}*/
+}
 
 .list-purposes {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .list-li-purposes {
@@ -230,8 +236,7 @@ body {
 }
 
 .purposes-title {
-    margin: 0;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
     font-size: 20px;
     line-height: 1.2;
@@ -242,8 +247,6 @@ body {
 
 /*Purposes > p*/
 .purposes-text {
-    margin: 0;
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -259,7 +262,6 @@ body {
 }
 
 .title-photos {
-    margin: 0;
     margin-bottom: 72px;
     text-align: center;
 
@@ -274,8 +276,6 @@ body {
 .list-employments {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .list-employments :not(:first-child) {
@@ -294,7 +294,6 @@ body {
 }
 
 .title-photos-2 {
-    margin: 0;
     margin-bottom: 72px;
     text-align: center;
 
@@ -309,13 +308,13 @@ body {
 .list-team {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+}
+
+.list-team :last-child {
+    margin-right: 0;
 }
 
 .person-item-div {
-    margin: 0;
-    padding: 0;
     padding: 32px 16px;
     text-align: center;
 
@@ -332,14 +331,11 @@ body {
 
 .person-item-img {
     display: block;
-    width: 100%;
+    max-width: 100%;
 }
 
 /*Names of four persons*/
 .names {
-    margin: 0;
-    padding: 0;
-
     font-size: 20px;
     line-height: 1.2;
 
@@ -348,8 +344,6 @@ body {
 
 /*Function of every participants*/
 .position {
-    margin: 0;
-    padding: 0;
     margin-top: 8px;
 
     font-size: 16px;
@@ -395,8 +389,6 @@ body {
 }
 
 .footer-text {
-    margin: 0;
-    padding: 0;
     padding-top: 16px;
 
     max-width: 264px;
@@ -436,7 +428,6 @@ body {
 /*list-portfolio-nav and Buttons*/
 
 .portfolio-main-area {
-    margin: 0;
     margin-left: auto;
     margin-right: auto;
     padding-top: 96px;
@@ -455,15 +446,17 @@ body {
 .list-portfolio-nav {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
 }
 
 .list-portfolio-nav :not(:last-child) {
     margin-right: 24px;
 }
 
-.list-portfolio-nav .button-items {
+.list-portfolio-nav .button-items-1,
+.list-portfolio-nav .button-items-2,
+.list-portfolio-nav .button-items-3,
+.list-portfolio-nav .button-items-4,
+.list-portfolio-nav .button-items-5 {
     padding: 12px 24px;
     text-align: center;
 
@@ -479,8 +472,11 @@ body {
     background-color: var(--color-3);
 }
 
-.list-portfolio-nav .button-items:hover,
-.list-portfolio-nav .button-items:focus {
+.list-portfolio-nav .button-items-1:hover,
+.list-portfolio-nav .button-items-2:hover,
+.list-portfolio-nav .button-items-3:hover,
+.list-portfolio-nav .button-items-4:hover,
+.list-portfolio-nav .button-items-5:hover {
     border: 1px solid var(--color-6);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
@@ -488,11 +484,32 @@ body {
     background-color: var(--color-6);
 }
 
-.list-portfolio-nav .button-items:active {
+.list-portfolio-nav .button-items-1:focus,
+.list-portfolio-nav .button-items-2:focus,
+.list-portfolio-nav .button-items-3:focus,
+.list-portfolio-nav .button-items-4:focus,
+.list-portfolio-nav .button-items-5:focus {
+    border: 1px solid var(--color-6);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+    color: var(--color-2);
+    background-color: var(--color-6);
+}
+
+.list-portfolio-nav .button-items-1:active,
+.list-portfolio-nav .button-items-2:active,
+.list-portfolio-nav .button-items-3:active,
+.list-portfolio-nav .button-items-4:active,
+.list-portfolio-nav .button-items-5:active {
     border: 1px solid var(--color-6);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
     color: var(--color-2);
+    background-color: var(--color-6);
+}
+
+.list-portfolio-nav .button-items-1 {
+    color: var(--color-3);
     background-color: var(--color-6);
 }
 
@@ -511,6 +528,8 @@ body {
     margin-right: 0;
     margin-right: -24px;
     margin-bottom: -48px;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -525,8 +544,6 @@ body {
 }
 
 .li-portfolio {
-    margin: 0;
-    padding: 0;
     margin-right: 24px;
     margin-bottom: 48px;
     
@@ -547,7 +564,6 @@ body {
 /*li-portfolio*/
 
 .li-portfolio-text {
-    padding: 0;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
@@ -563,8 +579,6 @@ body {
 .li-portfolio-7,
 .li-portfolio-8,
 .li-portfolio-9 {
-    margin: 0;
-    padding: 0;
     margin-bottom: 8px;
 
     font-weight: 600;
@@ -577,9 +591,6 @@ body {
 /*li-portfolio > portfolio-p */
 
 .portfolio-p {
-    margin: 0;
-    padding: 0;
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
